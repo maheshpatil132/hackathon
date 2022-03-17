@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,400;1,500;1,600&family=Roboto+Slab:wght@100;200;300;400&family=Roboto:wght@100;300;400;500&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .3s;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+    font-family: 'Nunito Sans', sans-serif
+}
+html{
+    font-size: 65.5%;
+}
+.main{
+    background: linear-gradient(161deg, #f7f5fb 50%, #fff 50%);
+    height: 100vh;
+}
+.header{
+    display: flex;
+    align-items: center;
+    padding: 1% 4%;
+}
+.header .logo h1{
+ font-size: 3.3rem;
+}
+.header .buttons{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+.header .buttons button{
+    padding: .53rem 2.7rem;
+    font-size: 1.5rem;
+    background-color:transparent;
+    color: blue;
+    border: .01rem solid blue;
+    border-radius: .3rem;
+    cursor: pointer;
+}
+.header .buttons button:hover{
+   background-color: blue;
+   color: white;
+}
+.header .buttons i{
+    font-size: 2.5rem;
+    margin-left: 3rem;
+    cursor: pointer;
+    display: none;
+}
+.header .navbar{
+    margin-left: 3rem;
+}
+.header .navbar a{
+    font-size: 1.6rem;
+    margin-left: 3rem;
+}
+
+/* home sections stylibg start from here */
+
+.home{
+   display: flex;
+   padding: 1% 4%;
+   align-items: center;
+   gap: 1rem;
+}
+
+.home .left h1{
+    font-size: 3.9rem;
+    color: rgb(70, 69, 69);
+    margin-bottom: 1.5rem;
+}
+.home .left p{
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: rgb(70, 70, 70);
+}
+.home .left button{
+    padding: .8rem 2.4rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: rgb(64, 64, 255);
+    border: .01rem solid blue;
+    color:white;
+    border-radius: .3rem;
+}
+.home .left button:hover{
+    background-color: blue;
+    color: white;
+    box-shadow: 0 0 2rem .2rem grey;
+}
+
+.home .right img{
+    width: 100%;
+}
+
+
+
+/* media queries start from here ...///,, */
+
+@media(max-width:1200px){
+    .header .navbar{
+        position: absolute;
+        display: none;
+        overflow: hidden;
+        top: 100%;
+        margin-left: 0%;
+        background-color: white;
+        width: 100%;
+        left: 0;
+        padding: 1% 4%;
+    }
+    .header .navtoggle{
+        display: flex;
+        flex-direction: column;
+    }
+    .header .navbar a{
+        margin-left: 0;
+        margin: 1rem 0;
+    }
+    .header{
+        position: relative;
+    }
+    .header .buttons i{
+        display: block;
+    }
+    .home{
+        padding: 4%;
+        flex-wrap: wrap-reverse;
+    }
+    .home .right{
+      flex: .5;
+    }
+
+}
+
+@media(max-width:580px){
+    .home .right{
+        width: 30rem;
+        flex: content;
+    }
+    .home .left{
+        flex: 1;
+    }
+}
