@@ -106,17 +106,17 @@ html{
 }
 .intro_box h1{
   text-align: center;
-  font-size: 3rem;
+  font-size: 3.4rem;
   margin: 1.5rem 0;
 }
 .intro_box hr{
-    width: 10rem;
+    width: 13rem;
     margin: auto;
-    margin-bottom: 3rem;
+    margin-bottom: 3.5rem;
+    border: .1rem solid rgb(180, 180, 180);
 }
 .intro_box .intro{
     display: flex;
-    /* align-items: center; */
 }
 .intro_box .intro .left{
   width: 34%;
@@ -142,27 +142,27 @@ html{
 }
 
 .intro_box .intro .right .content_box i{
-  color: green;
+  color: rgb(97, 255, 97);
   font-size: 1.9rem;
 }
 .intro_box .intro .right button{
     padding: .8rem 2.4rem;
     font-size: 1.5rem;
     cursor: pointer;
-    background: rgb(64, 64, 255);
+    background:transparent;
     border: .01rem solid blue;
-    color:white;
+    color:blue;
     border-radius: .3rem;
     margin-top: 1.5rem;
 }
 .intro_box .intro .right .content_box h2{
     font-weight: 500;
     font-size: 1.7rem;
+    color: rgb(105, 105, 105);
 }
 .intro_box .intro .right button:hover{
     background-color: blue;
     color: white;
-    box-shadow: 0 0 2rem .2rem grey;
 }
 /* media queries start from here ...///,, */
 
@@ -212,9 +212,9 @@ html{
        padding: 0;
        margin: 0;
    }
-   html{
+   /* html{
        font-size: 60%;
-   }
+   } */
 }
 
 @media(max-width:580px){
@@ -225,9 +225,9 @@ html{
     .home .left{
         flex: 1;
     }
-    html{
+    /* html{
         font-size: 55%;
-    }
+    } */
     .intro_box .intro .left{
         width: 100%;
         flex: content;
