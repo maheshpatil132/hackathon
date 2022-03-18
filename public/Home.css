@@ -15,7 +15,8 @@ html{
 }
 .main{
     background: linear-gradient(161deg, #f7f5fb 50%, #fff 50%);
-    height: 100vh;
+    /* height: 100vh; */
+    background: #f7f5fb;
 }
 .header{
     display: flex;
@@ -97,7 +98,68 @@ html{
 }
 
 
+/* intro section styling start here */
+.intro_box{
+    display: flex;
+    flex-direction: column;
+    padding: 1% 4%;
+}
+.intro_box h1{
+  text-align: center;
+  font-size: 3rem;
+  margin: 1.5rem 0;
+}
+.intro_box hr{
+    width: 10rem;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+.intro_box .intro{
+    display: flex;
+    /* align-items: center; */
+}
+.intro_box .intro .left{
+  width: 34%;
+}
+.intro_box .intro .left img{
+    width: 100%;
+    padding: 4rem;
+    background-color: #cd94d7; 
+    border-radius: 70% 30% 68% 32% / 31% 44% 56% 69% ;
+    
+    
+}
+.intro_box .intro .right{
+    padding: 1rem;
+    width: fit-content;
+    margin: auto;
+}
+.intro_box .intro .right .content_box{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1.2rem;
+}
 
+.intro_box .intro .right .content_box i{
+  color: green;
+  font-size: 1.9rem;
+}
+.intro_box .intro .right button{
+    padding: .8rem 2.4rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: rgb(64, 64, 255);
+    border: .01rem solid blue;
+    color:white;
+    border-radius: .3rem;
+    margin-top: 1.5rem;
+}
+.intro_box .intro .right button:hover{
+    background-color: blue;
+    color: white;
+    box-shadow: 0 0 2rem .2rem grey;
+}
 /* media queries start from here ...///,, */
 
 @media(max-width:1200px){
@@ -133,7 +195,22 @@ html{
     .home .right{
       flex: .5;
     }
-
+   .intro_box .intro{
+    flex-direction: column;
+   }
+   .intro_box .intro .left{
+       width: 50%;
+       flex: content;
+       margin-bottom: 3rem;
+   }
+   .intro_box .intro .right{
+       width: fit-content;
+       padding: 0;
+       margin: 0;
+   }
+   html{
+       font-size: 60%;
+   }
 }
 
 @media(max-width:580px){
@@ -144,4 +221,12 @@ html{
     .home .left{
         flex: 1;
     }
+    html{
+        font-size: 55%;
+    }
+    .intro_box .intro .left{
+        width: 100%;
+        flex: content;
+    }
 }
+
