@@ -138,7 +138,7 @@ html{
     display: flex;
     align-items: center;
     gap: 2rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.1rem;
 }
 
 .intro_box .intro .right .content_box i{
@@ -154,6 +154,10 @@ html{
     color:white;
     border-radius: .3rem;
     margin-top: 1.5rem;
+}
+.intro_box .intro .right .content_box h2{
+    font-weight: 500;
+    font-size: 1.7rem;
 }
 .intro_box .intro .right button:hover{
     background-color: blue;
