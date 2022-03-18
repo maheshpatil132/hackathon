@@ -212,9 +212,9 @@ html{
        padding: 0;
        margin: 0;
    }
-   /* html{
+   html{
        font-size: 60%;
-   } */
+   }
 }
 
 @media(max-width:580px){
@@ -225,12 +225,17 @@ html{
     .home .left{
         flex: 1;
     }
-    /* html{
+    html{
         font-size: 55%;
-    } */
+    }
     .intro_box .intro .left{
         width: 100%;
         flex: content;
+    }
+}
+@media(max-width:461px){
+    html{
+        font-size: 52%;
     }
 }
 
