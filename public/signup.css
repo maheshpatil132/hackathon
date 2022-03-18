@@ -14,25 +14,40 @@ html{
     font-size: 65.5%;
 }
 
+body{
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(238, 238, 241);
+}
 
 form{
     margin: auto;
     display: flex;
     flex-direction: column;
-    width: 30rem;
+    width: 40rem;
+    /* border: .01rem solid lightgrey; */
+    box-shadow: 0 0 .5rem .1rem rgb(228, 227, 227);
+    padding: 2rem 2rem;
+    border-radius: .6rem;
+    background-color: white;
 }
 form h1{
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    text-align: left;
+    font-size: 2.7rem;
+    margin-bottom: 2rem;
+    color: rgb(73, 73, 252);
 }
 form .input_layer{
     width: 100%;
     background-color: lightgray;
-    margin: .5rem 0;
+    margin: 1rem auto;
     border-radius: .3rem;
     display: flex;
     align-items: center;
+    border: .01rem solid lightgray;
+    padding: .5rem;
 }
 form .input_layer:hover{
     background-color: white;
@@ -43,29 +58,57 @@ form .input_layer input{
     background-color: transparent;
     width: 100%;
     outline: none;
+    font-size: 1.4rem;
 }
 
 form .input_layer i{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     border-right: .01rem solid grey;
-    padding: 1rem;
+    padding: 1.2rem;
 }
 form .input_layer input{
     font-size: 1.4rem;
     margin-left: 1rem;
 }
  form .buttons button{
-  padding: .5rem 2.5rem;
-  font-size: 1.4rem;
-  margin-top: 1rem;
+  padding: 1rem 3rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-top: 1.9rem;
   cursor: pointer;
   background: transparent;
-  border: .01rem solid blue;
+  border: .01rem solid rgb(73, 73, 252);
   color: blue;
   border-radius: .4rem;
  }
 
  form .buttons button:hover{
-     background-color: blue;
+     background-color: rgb(73, 73, 252);
      color: white;
  }
+
+form .input_layer #eye, #eye1{
+    cursor: pointer;
+}
+
+form p{
+    font-size: 1.7rem;
+    text-align: center;
+    margin-top: 2rem;
+    text-transform: none;
+}
+form span{
+    margin-left: .7rem;
+}
+form p span a{
+    color: blue;
+}
+
+@media(max-width:500px){
+    form{
+        padding: 2rem 2rem;
+    }
+    html{
+        font-size: 60%;
+    }
+}
