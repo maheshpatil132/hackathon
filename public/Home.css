@@ -12,6 +12,7 @@
 }
 html{
     font-size: 65.5%;
+    scroll-behavior: smooth;
 }
 .main{
     background: linear-gradient(161deg, #f7f5fb 50%, #fff 50%);
@@ -90,7 +91,7 @@ html{
 .home .left button:hover{
     background-color: blue;
     color: white;
-    box-shadow: 0 0 1.3rem .2rem grey;
+    box-shadow: 0 0 1.7rem .4rem rgb(201, 201, 201);
 }
 
 .home .right img{

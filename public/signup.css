@@ -60,9 +60,6 @@ form .input_layer input{
     outline: none;
     font-size: 1.4rem;
 }
-input:-webkit-autofil{
-    -webkit-text-fill-color: lightsalmon;
-}
 
 form .input_layer i{
     font-size: 1.6rem;

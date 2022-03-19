@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,400;1,500;1,600&family=Roboto+Slab:wght@100;200;300;400&family=Roboto:wght@100;300;400;500&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .3s;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+    font-family: 'Nunito Sans', sans-serif
+}
+html{
+    font-size: 65.5%;
+    scroll-behavior: smooth;
+}
+.main{
+    background: linear-gradient(161deg, #f7f5fb 50%, #fff 50%);
+    height: 100vh;
+    background: #f7f5fb;
+    background-image: url('../images/image1.svg');
+    background-repeat: no-repeat;
+
+}
+.header{
+    display: flex;
+    align-items: center;
+    padding: 1% 4%;
+}
+.header .logo h1{
+ font-size: 3.3rem;
+}
+.header .buttons{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+.header .buttons button{
+    padding: .53rem 2.7rem;
+    font-size: 1.5rem;
+    background-color:transparent;
+    color: blue;
+    border: .01rem solid blue;
+    border-radius: .3rem;
+    cursor: pointer;
+}
+.header .buttons button:hover{
+   background-color: blue;
+   color: white;
+}
+.header .buttons i{
+    font-size: 2.5rem;
+    margin-left: 3rem;
+    cursor: pointer;
+    display: none;
+}
+.header .navbar{
+    margin-left: 3rem;
+}
+.header .navbar a{
+    font-size: 1.6rem;
+    margin-left: 3rem;
+}
+
+
+.add{
+    display: flex;
+    padding: 1% 4%
+}
+.add form h1{
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    color: rgb(99, 99, 247);
+}
+.add form{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 38rem;
+    margin-left: auto;
+    margin-top: 5rem;
+    margin-right: 7rem;
+    background-color: white;
+    border-radius: .4rem;
+    box-shadow: 0 0 .8rem .1rem rgb(228, 227, 227);
+}
+.add form .input_layer{
+    width: 100%;
+    padding: .3rem;
+    border: .01rem solid grey;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-radius: .3rem;
+}
+.add form input{
+    width: 100%;
+    padding: 1rem .7rem;
+    font-size: 1.4rem;
+    border: .01rem solid grey;
+   outline: none;
+    border: none;
+}
+.add form button{
+    padding: .7rem 2.5rem;
+    font-size: 1.4rem;
+    width: fit-content;
+    margin-top: .9rem;
+    border: .01rem solid blue;
+    cursor: pointer;
+    background: transparent;
+    color: blue;
+    border-radius: .3rem;
+}
+.add form button:hover{
+    background-color: blue;
+    color: white;
+}
+
+
+/* media queries start */
+
+@media(max-width:1200px){
+    .header .navbar{
+        position: absolute;
+        display: none;
+        overflow: hidden;
+        top: 100%;
+        margin-left: 0%;
+        background-color: white;
+        width: 100%;
+        left: 0;
+        padding: 1% 4%;
+    }
+    .header .navtoggle{
+        display: flex;
+        flex-direction: column;
+    }
+    .header .navbar a{
+        margin-left: 0;
+        margin: 1rem 0;
+    }
+    .header{
+        position: relative;
+    }
+    .header .buttons i{
+        display: block;
+    }
+   html{
+       font-size: 60%;
+   }
+}
+
+@media(max-width:580px){
+    .add form{
+        margin-right: auto;
+        width: 100%;
+    }
+    html{
+        font-size: 55%;
+    }
+}
