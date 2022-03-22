@@ -82,8 +82,8 @@ body{
 }
 .main_content{
     width: 45rem;
-    margin: auto;
-    margin-top: 5rem;
+    margin:5rem auto;
+
 }
 .main_content form{
   width: 100%;
@@ -154,7 +154,21 @@ body{
   border-color: blue;
 }
 
-
+/* footer styling start here*/
+.footer{
+    background-color: rgb(46, 45, 45);
+    padding: 2rem 0;
+}
+.footer p{
+    font-size: 1.7rem;
+    text-align: center;
+    color: white;
+}
+.footer p span{
+    color: rgb(224, 130, 35);
+    font-weight: bold;
+    margin: 0 .5rem;
+}
 /* media queries start from here ...///,, */
 
 @media(max-width:1200px){

@@ -114,6 +114,23 @@ img{
     color: rgb(44, 44, 44);
     color: blue;
 }
+
+
+/* footer styling start here*/
+.footer{
+    background-color: rgb(46, 45, 45);
+    padding: 2rem 0;
+}
+.footer p{
+    font-size: 1.7rem;
+    text-align: center;
+    color: white;
+}
+.footer p span{
+    color: rgb(224, 130, 35);
+    font-weight: bold;
+    margin: 0 .5rem;
+}
 /* media queries starts */
 
 @media(max-width:1200px){
@@ -144,8 +161,6 @@ img{
     }
 }
 
-
-/* media queries start */
 
 @media(max-width:580Px){
     html{
