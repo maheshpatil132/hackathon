@@ -14,18 +14,9 @@ html{
     font-size: 65.5%;
     scroll-behavior: smooth;
 }
-/* .main{
-    background: linear-gradient(161deg, #f7f5fb 50%, #fff 50%);
-    height: 100vh;
-    background: #f7f5fb;
-    background-image: url('../images/image1.svg');
-    background-repeat: no-repeat;
-
-} */
 body{
-    background: #f7f5fb;
-    background-image: url('../images/image1.svg');
-    background-repeat: no-repeat;
+    background: #cdd2ff;
+    background: #ebe9ee;
 }
 .header{
     display: flex;
@@ -83,64 +74,88 @@ body{
     font-size: 1.6rem;
     margin-left: 3rem;
 }
-
-
-.add{
-    display: flex;
-    padding: 1% 4%
-}
-.add form h1{
-    font-size: 2.8rem;
-    margin-bottom: 2rem;
-    color: rgb(99, 99, 247);
-}
-.add form{
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    width: 38rem;
-    margin-left: auto;
-    margin-top: 5rem;
-    margin-right: 7rem;
-    background-color: white;
-    border-radius: .4rem;
-    box-shadow: 0 0 .8rem .1rem rgb(228, 227, 227);
-}
-.add form .input_layer{
-    width: 100%;
-    padding: .3rem;
-    border: .01rem solid grey;
-    display: flex;
-    align-items: center;
-    margin-bottom: 2rem;
-    border-radius: .3rem;
-}
-.add form input{
-    width: 100%;
-    padding: 1rem .7rem;
-    font-size: 1.4rem;
-    border: .01rem solid grey;
-   outline: none;
-    border: none;
-}
-.add form button{
-    padding: .7rem 2.5rem;
-    font-size: 1.4rem;
-    width: fit-content;
-    margin-top: .9rem;
-    border: .01rem solid blue;
-    cursor: pointer;
-    background: transparent;
+.main_content form h1{
+    font-size: 3rem;
+    font-weight: 500;
     color: blue;
+    margin-bottom: 2rem;
+}
+.main_content{
+    width: 45rem;
+    margin: auto;
+    margin-top: 5rem;
+}
+.main_content form{
+  width: 100%;
+  margin: auto;
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.3rem;
+  background: white;
+  border-radius: .7rem;
+}
+.main_content form .content{
+    display: flex;
+    gap: 1.5rem;
+}
+.main_content form .content .input_layer{
+    padding: 1rem;
+    width: 100%;
     border-radius: .3rem;
+    background-color: rgba(232 ,233, 255 ,1);
 }
-.add form button:hover{
-    background-color: blue;
+.main_content form .content .input_layer input{
+    font-size: 1.5rem;
+    padding: 0rem .5rem;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: hsla(233, 52%, 47%, 1);
+    font-weight: 600;
+}
+
+.main_content form .content .input_layer input::placeholder{
+    color: hsla(233, 52%, 47%, 1);
+    font-weight: 600;
+}
+
+.main_content form  textarea{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.4rem;
+    background-color:rgba(164 ,177 ,252,1);
+    border: none;
+    border-radius: .3rem;
+    outline: none;
+    color: hsla(233, 52%, 47%, 1);
+    font-weight: 600;
+}
+
+.main_content form  textarea::placeholder{
+    color: hsla(233, 52%, 47%, 1);
+    font-weight: bolder;
+   
+}
+.main_content form button{
+    width: fit-content;
+    padding: 1rem 2.5rem;
+    background-color: rgba(35, 60, 245,1);
+    border: .01rem solid rgba(35, 60, 245,1);
+    cursor: pointer;
+    font-size: 1.4rem;
     color: white;
+    border-radius: 1.65rem;
+    margin-top: 1rem;
+}
+.main_content form button:hover{
+  background-color: blue;
+  border-color: blue;
 }
 
 
-/* media queries start */
+/* media queries start from here ...///,, */
 
 @media(max-width:1200px){
     .header .navbar{
@@ -168,17 +183,23 @@ body{
     .header .buttons i{
         display: block;
     }
-   html{
-       font-size: 60%;
-   }
 }
 
+
+
 @media(max-width:580px){
-    .add form{
-        margin-right: auto;
-        width: 100%;
-    }
     html{
         font-size: 55%;
+    }
+}
+@media(max-width:400px){
+    html{
+        font-size: 52%;
+    }
+    .main_content form{
+        padding: 2rem;
+    }
+    .main_content{
+        width: 100%;
     }
 }

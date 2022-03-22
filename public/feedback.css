@@ -18,6 +18,10 @@ html{
 .main{
     background: linear-gradient(161deg, #f7f5fb 50%, #fff 50%);
     /* height: 100vh; */
+    /* background: #f7f5fb; */
+    
+}
+body{
     background: #f7f5fb;
 }
 .header{
@@ -28,6 +32,23 @@ html{
 }
 .header .logo h1{
  font-size: 3.3rem;
+}
+.header .logo{
+    display: flex;
+    width: 5rem;
+    margin-right: 2rem;
+}
+.header .logo img{
+    /* border-radius: 50%; */
+    position: absolute;
+    width: 10rem;
+    top: -50%;
+}
+.header .logo a{
+    font-size: 2rem;
+    position: relative;
+    width: 5rem;
+    height: 4rem;
 }
 .header .buttons{
     margin-left: auto;
@@ -76,9 +97,12 @@ html{
 .data .container{
     display: flex;
     /* align-items: center; */
-    border: .01rem solid rgb(190, 190, 190);
-    padding: 2rem;
-    margin: 2rem 0;
+    /* border: .01rem solid rgb(190, 190, 190); */
+    padding: 2rem 3rem;
+    margin: 1.6rem 0;
+    background-color: white;
+    border-radius: .4rem;
+    box-shadow: 0 0 .8rem .1rem rgb(231, 231, 231);
 }
 .data .container .img_box{
     width: 20rem;

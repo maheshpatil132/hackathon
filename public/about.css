@@ -14,18 +14,13 @@ html{
     font-size: 65.5%;
     scroll-behavior: smooth;
 }
-/* .main{
+.main{
     background: linear-gradient(161deg, #f7f5fb 50%, #fff 50%);
-    height: 100vh;
+    /* height: 100vh; */
     background: #f7f5fb;
-    background-image: url('../images/image1.svg');
-    background-repeat: no-repeat;
-
-} */
+}
 body{
     background: #f7f5fb;
-    background-image: url('../images/image1.svg');
-    background-repeat: no-repeat;
 }
 .header{
     display: flex;
@@ -83,64 +78,43 @@ body{
     font-size: 1.6rem;
     margin-left: 3rem;
 }
-
-
-.add{
-    display: flex;
-    padding: 1% 4%
+img{
+    width: 20rem;
 }
-.add form h1{
-    font-size: 2.8rem;
-    margin-bottom: 2rem;
-    color: rgb(99, 99, 247);
+.main_content{
+    padding: 1% 4%;
 }
-.add form{
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    width: 38rem;
-    margin-left: auto;
-    margin-top: 5rem;
-    margin-right: 7rem;
-    background-color: white;
-    border-radius: .4rem;
-    box-shadow: 0 0 .8rem .1rem rgb(228, 227, 227);
+.main_content h1{
+    font-size: 3rem;
+    text-align: center;
+    margin: 4rem 0;
+    font-weight: 600;
+    color: rgb(146, 146, 253);
 }
-.add form .input_layer{
-    width: 100%;
-    padding: .3rem;
-    border: .01rem solid grey;
-    display: flex;
-    align-items: center;
-    margin-bottom: 2rem;
-    border-radius: .3rem;
-}
-.add form input{
-    width: 100%;
-    padding: 1rem .7rem;
-    font-size: 1.4rem;
-    border: .01rem solid grey;
-   outline: none;
-    border: none;
-}
-.add form button{
-    padding: .7rem 2.5rem;
-    font-size: 1.4rem;
+.main_content .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(27rem,1fr));
+    place-items: center;
     width: fit-content;
-    margin-top: .9rem;
-    border: .01rem solid blue;
-    cursor: pointer;
-    background: transparent;
+    margin: 3rem auto;
+    gap: 1rem;
+}
+.main_content .container .box{
+  width: 100%;
+  padding: 3rem;
+}
+.main_content .container .box img{
+    width: 100%;
+    border-radius: 50%;
+}
+.main_content .container .box h2{
+    font-size: 2.2rem;
+    text-align: center;
+    margin-top: 1rem;
+    color: rgb(44, 44, 44);
     color: blue;
-    border-radius: .3rem;
 }
-.add form button:hover{
-    background-color: blue;
-    color: white;
-}
-
-
-/* media queries start */
+/* media queries starts */
 
 @media(max-width:1200px){
     .header .navbar{
@@ -167,18 +141,5 @@ body{
     }
     .header .buttons i{
         display: block;
-    }
-   html{
-       font-size: 60%;
-   }
-}
-
-@media(max-width:580px){
-    .add form{
-        margin-right: auto;
-        width: 100%;
-    }
-    html{
-        font-size: 55%;
     }
 }

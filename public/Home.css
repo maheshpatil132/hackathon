@@ -22,10 +22,27 @@ html{
 .header{
     display: flex;
     align-items: center;
-    padding: 1% 4%;
+    padding: 1.5% 4%;
 }
 .header .logo h1{
  font-size: 3.3rem;
+}
+.header .logo{
+    display: flex;
+    width: 5rem;
+    margin-right: 2rem;
+}
+.header .logo img{
+    /* border-radius: 50%; */
+    position: absolute;
+    width: 10rem;
+    top: -50%;
+}
+.header .logo a{
+    font-size: 2rem;
+    position: relative;
+    width: 5rem;
+    height: 4rem;
 }
 .header .buttons{
     margin-left: auto;
@@ -58,6 +75,7 @@ html{
     font-size: 1.6rem;
     margin-left: 3rem;
 }
+
 
 /* home sections stylibg start from here */
 
@@ -163,6 +181,23 @@ html{
 .intro_box .intro .right button:hover{
     background-color: rgb(80, 80, 253);
     color: white;
+}
+
+
+/* footer styling start here*/
+.footer{
+    background-color: rgb(46, 45, 45);
+    padding: 2rem 0;
+}
+.footer p{
+    font-size: 1.7rem;
+    text-align: center;
+    color: white;
+}
+.footer p span{
+    color: rgb(224, 130, 35);
+    font-weight: bold;
+    margin: 0 .5rem;
 }
 /* media queries start from here ...///,, */
 
