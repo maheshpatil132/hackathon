@@ -82,8 +82,7 @@ body{
 }
 .main_content{
     width: 45rem;
-    margin:5rem auto;
-
+    margin:3rem auto;
 }
 .main_content form{
   width: 100%;
