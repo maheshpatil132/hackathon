@@ -30,7 +30,7 @@ html{
 .header .logo{
     display: flex;
     width: 5rem;
-    margin-right: 2rem;
+    margin-right: 3rem;
 }
 .header .logo img{
     /* border-radius: 50%; */
@@ -121,7 +121,7 @@ html{
 .intro_box{
     display: flex;
     flex-direction: column;
-    padding: 1% 4%;
+    padding: 2% 4%;
 }
 .intro_box h1{
   text-align: center;
@@ -266,6 +266,9 @@ html{
     .intro_box .intro .left{
         width: 100%;
         flex: content;
+    }
+    .header{
+        padding: 2.5rem 4%;
     }
 }
 @media(max-width:461px){

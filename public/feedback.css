@@ -27,8 +27,7 @@ body{
 .header{
     display: flex;
     align-items: center;
-    padding: 1% 4%;
-    border-bottom: .01rem solid rgb(165, 163, 163);
+    padding: 1.5% 4%;
 }
 .header .logo h1{
  font-size: 3.3rem;
@@ -36,7 +35,7 @@ body{
 .header .logo{
     display: flex;
     width: 5rem;
-    margin-right: 2rem;
+    margin-right: 3rem;
 }
 .header .logo img{
     /* border-radius: 50%; */
@@ -197,6 +196,9 @@ body{
     }
     .data .container .info_box h2{
         margin-top: .4rem;
+    }
+    .header{
+        padding: 2.5rem 4%;
     }
 }
 @media(max-width:450px){
