@@ -143,9 +143,7 @@ body{
 .footer{
     background-color: rgb(71, 71, 71);
     padding: 1.5rem 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    
 }
 .footer p{
     font-size: 1.7rem;
