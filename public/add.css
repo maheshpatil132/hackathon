@@ -99,7 +99,7 @@ body{
     display: flex;
     flex-direction: column;
     padding: 2rem;
-    width: 38rem;
+    width: 40rem;
     margin-left: auto;
     margin-right: 7rem;
     background-color: white;
@@ -127,7 +127,7 @@ body{
     padding: .7rem 2.5rem;
     font-size: 1.4rem;
     width: fit-content;
-    margin-top: .9rem;
+    margin-top: 2rem;
     border: .01rem solid blue;
     cursor: pointer;
     background: transparent;
@@ -137,6 +137,11 @@ body{
 .add form button:hover{
     background-color: blue;
     color: white;
+}
+.add form video{
+    width: 100%;
+    border: .01rem solid grey;
+    background-color: rgb(214, 210, 210);
 }
 
 /* footer styling start here*/
