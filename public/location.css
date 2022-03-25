@@ -14,11 +14,10 @@ html{
     font-size: 65.5%;
     scroll-behavior: smooth;
 }
-body{
+.main{
+    background: linear-gradient(161deg, #f7f5fb 50%, #fff 50%);
+    /* height: 100vh; */
     background: #f7f5fb;
-    background-image: url('../images/image1.svg');
-    background-repeat: no-repeat;
-    background-size: 60%;
 }
 .header{
     display: flex;
@@ -77,84 +76,39 @@ body{
     margin-left: 3rem;
 }
 
-
-.add{
-    display: flex;
+.main_content{
     padding: 1% 4%;
-    margin: 3rem 0;
 }
-.add form h1{
-    font-size: 2.8rem;
-    margin-bottom: 2rem;
-    color: rgb(99, 99, 247);
-}
-.add form{
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    width: 40rem;
-    margin-left: auto;
-    margin-right: 7rem;
-    background-color: white;
-    border-radius: .4rem;
-    box-shadow: 0 0 .8rem .1rem rgb(228, 227, 227);
-}
-.add form .input_layer{
+.main_content table{
+    margin-top: 3rem;
     width: 100%;
-    padding: .3rem;
-    border: .01rem solid grey;
-    display: flex;
-    align-items: center;
-    margin-bottom: 2rem;
-    border-radius: .3rem;
+    border-collapse: collapse;
+    font-size: 1.5rem;
 }
-.add form input{
-    width: 100%;
-    padding: 1rem .7rem;
+ tr,td{
+    border: .1rem solid #dddddd;
+  text-align: left;
+  padding: .8rem;
+}
+th{
     font-size: 1.4rem;
-    border: .01rem solid grey;
-   outline: none;
-    border: none;
-}
-.add form button{
-    padding: .7rem 2.5rem;
-    font-size: 1.4rem;
-    width: fit-content;
-    margin-top: 2rem;
-    border: .01rem solid blue;
-    cursor: pointer;
-    background: transparent;
-    color: blue;
-    border-radius: .3rem;
-}
-.add form button:hover{
-    background-color: blue;
-    color: white;
-}
-.add form video{
-    width: 100%;
-    border: .01rem solid grey;
-    background-color: rgb(214, 210, 210);
+    background-color: aquamarine;
+    border: .1rem solid grey;
+    padding: .8rem;
 }
 
-/* footer styling start here*/
-.footer{
-    background-color: rgb(71, 71, 71);
-    padding: 1.5rem 0;
-    
+.status{
+    color: green;
 }
-.footer p{
-    font-size: 1.7rem;
-    text-align: center;
-    color: white;
+.status_f{
+    color: red;
 }
-.footer p span{
-    color: rgb(224, 130, 35);
-    font-weight: bold;
-    margin: 0 .5rem;
-}
+/* tr:nth-child(even) {
+    background-color: #dddddd;
+  } */
 
-/* media queries start */
+
+  /* media queries start from here ...///,, */
 
 @media(max-width:1200px){
     .header .navbar{
@@ -182,20 +136,19 @@ body{
     .header .buttons i{
         display: block;
     }
-   html{
-       font-size: 60%;
-   }
+    html{
+        font-size: 60%;
+    }
 }
 
 @media(max-width:580px){
-    .add form{
-        margin-right: auto;
-        width: 100%;
-    }
     html{
-        font-size: 55%;
+        font-size: 52%;
     }
-    .header{
-        padding: 2.5rem 4%;
+    .main_content{
+        padding: 1% 2%;
+    }
+    .main_content{
+        overflow-x: auto;
     }
 }
